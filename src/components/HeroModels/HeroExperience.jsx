@@ -1,0 +1,62 @@
+import {Canvas} from "@react-three/fiber";
+import {OrbitControls} from "@react-three/drei";
+import {useMediaQuery} from "react-responsive";
+import {Room} from "./Room.jsx"; /* Si se quiere usar Room */
+import HeroLights from "./HeroLights.jsx";
+import {Jingliu} from "./Jingliu.jsx"; /* Si se quiere usar el personaje 3d (no le funcionan las luces y las partículas xd) */
+import Particles from "./Particles.jsx";
+
+
+const HeroExperience = () => {
+    const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });
+    const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+
+    return ( /* Configuración Room */
+        <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
+            <OrbitControls
+                enablePan={false}
+                enableZoom={!isTablet}
+                maxDistance={20}
+                minDistance={5}
+                minPolarAngle={Math.PI / 5}
+                maxPolarAngle={Math.PI / 2}
+            />
+            <HeroLights />
+            <Particles count={100} />
+
+            <group
+                scale={isMobile ? 0.7 : 1}
+                position={[0, -3.5, 0]}
+                rotation={[0, -Math.PI / 4, 0]}
+            >
+                <Room />
+            </group>
+        </Canvas>
+        /* Configuración Personaje 3d
+        <Canvas camera={{ position: [-20, 0, 20], fov: 5 }}>
+
+            <OrbitControls
+                enablePan={false}
+                enableZoom={!isTablet}
+                maxDistance={35}
+                minDistance={5}
+                minPolarAngle={Math.PI / 5}
+                maxPolarAngle={Math.PI / 2}
+            />
+
+            <HeroLights />
+
+            <Particles count={1000} />
+
+            <group
+                scale={isMobile? 0.7 : 1}
+                position={[0, -1, 0]}
+                rotation={[0, -Math.PI /4, 0]}
+            >
+                <Jingliu />
+            </group>
+
+            </Canvas>*/
+    )
+}
+export default HeroExperience
