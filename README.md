@@ -6,9 +6,7 @@ Run en consola wsl:
 
 'npm run dev'
 
-## Publicado también en GitHub Pages
-
-Algunas dependencias instaladas: 
+## Algunas dependencias instaladas: 
 
 • npm install gsap react-router-dom three @react-three/fiber @react-three/drei
 
