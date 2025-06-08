@@ -103,25 +103,25 @@ const techStackImgs = [
 
 const techStackIcons = [
     {
-        name: "React Developer",
+        name: "Desarrollador React",
         modelPath: "/models/react_logo-transformed.glb",
         scale: 1,
         rotation: [0, 0, 0],
     },
     {
-        name: "Python Developer",
+        name: "Desarrollador Python",
         modelPath: "/models/python-transformed.glb",
         scale: 0.8,
         rotation: [0, 0, 0],
     },
     {
-        name: "Backend Developer",
+        name: "Desarrollador Backend",
         modelPath: "/models/node-transformed.glb",
         scale: 5,
         rotation: [0, -Math.PI / 2, 0],
     },
     {
-        name: "Interactive Developer",
+        name: "Desarrollador Interactivo",
         modelPath: "/models/three.js-transformed.glb",
         scale: 0.05,
         rotation: [0, 0, 0],
@@ -197,19 +197,18 @@ const expLogos = [
 const socialImgs = [
     {
         name: "insta",
+        url: "https://www.instagram.com/itsadri_rd?igsh=NDF3MW04cXV4Y2Fh",
         imgPath: "/images/insta.png",
     },
     {
         name: "fb",
+        url: "https://www.facebook.com/share/19EiGFkXdT/",
         imgPath: "/images/fb.png",
     },
     {
         name: "x",
+        url: "https://x.com/RicardoI1013?t=Qpxu04-rnYpJPMrS1MOSfA&s=08",
         imgPath: "/images/x.png",
-    },
-    {
-        name: "linkedin",
-        imgPath: "/images/linkedin.png",
     },
 ];
 
