@@ -1,20 +1,16 @@
 const navLinks = [
     {
-        name: "Work",
+        name: "Trabajo",
         link: "#work",
     },
     {
-        name: "Experience",
+        name: "Experiencia",
         link: "#experience",
     },
     {
-        name: "Skills",
+        name: "Habilidades",
         link: "#skills",
-    },
-    {
-        name: "Testimonials",
-        link: "#testimonials",
-    },
+    }
 ];
 
 const words = [
@@ -37,55 +33,48 @@ const counterItems = [
 
 const logoIconsList = [
     {
-        imgPath: "/images/logos/company-logo-1.png",
+        imgPath: "/images/logos/react.png",
     },
     {
         imgPath: "/images/logos/company-logo-2.png",
     },
     {
-        imgPath: "/images/logos/company-logo-3.png",
+        imgPath: "/images/logos/git.svg",
     },
     {
         imgPath: "/images/logos/company-logo-4.png",
     },
     {
-        imgPath: "/images/logos/company-logo-5.png",
+        imgPath: "/images/logos/node.png",
     },
     {
         imgPath: "/images/logos/company-logo-6.png",
     },
     {
-        imgPath: "/images/logos/company-logo-7.png",
+        imgPath: "/images/logos/three.png",
     },
     {
         imgPath: "/images/logos/company-logo-8.png",
-    },
-    {
-        imgPath: "/images/logos/company-logo-9.png",
-    },
-    {
-        imgPath: "/images/logos/company-logo-10.png",
-    },
-    {
-        imgPath: "/images/logos/company-logo-11.png",
     },
 ];
 
 const abilities = [
     {
         imgPath: "/images/seo.png",
-        title: "Quality Focus",
-        desc: "Delivering high-quality results while maintaining attention to every detail.",
+        title: "Enfoque en calidad",
+        desc: "Siempre se buscan resultados de alta calidad manteniendo " +
+            "la mayor atención posible en cada detalle.",
     },
     {
         imgPath: "/images/chat.png",
-        title: "Reliable Communication",
-        desc: "Keeping you updated at every step to ensure transparency and clarity.",
+        title: "Comunicación de confianza.",
+        desc: "Te mantengo informado y actualizado de cada paso dado para asegurar" +
+            "transparencia y claridad.",
     },
     {
         imgPath: "/images/time.png",
-        title: "On-Time Delivery",
-        desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+        title: "Entrega a tiempo",
+        desc: "Siempre se trata de que los proyectos se completen a tiempo, con calidad y atención al detalle.",
     },
 ];
 
@@ -147,39 +136,44 @@ const techStackIcons = [
 
 const expCards = [
     {
-        review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-        imgPath: "/images/exp1.png",
-        logoPath: "/images/logo1.png",
-        title: "Frontend Developer",
-        date: "January 2023 - Present",
+        review: "Etapa primeriza en la creación de páginas web." +
+            "Primero utilizando solamente HTML para luego ir implementando más herramientas como con JS y CSS. ",
+        imgPath: "/images/banner1.png",
+        logoPath: "/images/icon1.png",
+        title: "Desarrollador HTML",
+        date: "Junio 2022 - Presente",
         responsibilities: [
-            "Developed and maintained user-facing features for the Hostinger website.",
-            "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-            "Optimized web applications for maximum speed and scalability.",
+            "Desarrollé y mantuve la estructura HTML de páginas web, asegurando compatibilidad con navegadores modernos.",
+            "Integré contenido dinámico trabajando con equipos de backend (Plantillas para CMS o APIs).",
+            "Documenté y refactoricé código heredado para mantener escalabilidad y buenas prácticas.",
         ],
     },
     {
-        review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-        imgPath: "/images/exp2.png",
-        logoPath: "/images/logo2.png",
-        title: "Full Stack Developer",
-        date: "June 2020 - December 2023",
+        review: "Desarrollé aplicaciones web dinámicas y escalables utilizando React.js y React.jsx, " +
+            "enfocándome en crear interfaces de usuario eficientes, componentes reutilizables y una experiencia de usuario fluida. " +
+            "Trabajé en estrecha colaboración con equipos de diseño y backend para implementar soluciones técnicas alineadas con los objetivos del producto.",
+        imgPath: "/images/banner2.png",
+        logoPath: "/images/icon2.png",
+        title: "Trabajos con React",
+        date: "Febrero 2025 - Presente",
         responsibilities: [
-            "Led the development of Docker's web applications, focusing on scalability.",
-            "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-            "Contributed to open-source projects that were used with the Docker ecosystem.",
+            "Desarrollé componentes React altamente reutilizables y optimizados para mejorar la mantenibilidad del código.",
+            "Implementé hooks (useState, useEffect, useContext) y manejo de estado con Redux/Toolkit para gestión de datos complejos.",
+            "Trabajé con librerías complementarias como React Router, Formik, Material-UI o TailwindCSS para agilizar el desarrollo.",
         ],
     },
     {
-        review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-        imgPath: "/images/exp3.png",
-        logoPath: "/images/logo3.png",
-        title: "React Native Developer",
-        date: "March 2019 - May 2020",
+        review: "Implementé y optimicé entornos de desarrollo, despliegue y producción utilizando Docker para " +
+            "garantizar consistencia, escalabilidad y portabilidad en aplicaciones. Trabajé en la contenerización de servicios, " +
+            "la gestión de imágenes y la automatización de workflows para mejorar la eficiencia del ciclo de vida del software.",
+        imgPath: "/images/banner3.png",
+        logoPath: "/images/icon3.png",
+        title: "Trabajos con Docker",
+        date: "Marzo 2025 - Presente",
         responsibilities: [
-            "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-            "Improved app performance and user experience through code optimization and testing.",
-            "Coordinated with the product team to implement features based on feedback.",
+            "Gestioné contenedores y orquestación básica con docker-compose para entornos locales y staging..",
+            "Optimicé imágenes aplicando buenas prácticas (multistage builds, Alpine Linux, limpieza de caché).",
+            "Dockericé aplicaciones (backend, frontend y servicios) creando imágenes optimizadas con Dockerfile.",
         ],
     },
 ];
@@ -199,50 +193,6 @@ const expLogos = [
     },
 ];
 
-const testimonials = [
-    {
-        name: "Esther Howard",
-        mentions: "@estherhoward",
-        review:
-            "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-        imgPath: "/images/client1.png",
-    },
-    {
-        name: "Wade Warren",
-        mentions: "@wadewarren",
-        review:
-            "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-        imgPath: "/images/client3.png",
-    },
-    {
-        name: "Guy Hawkins",
-        mentions: "@guyhawkins",
-        review:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        imgPath: "/images/client2.png",
-    },
-    {
-        name: "Marvin McKinney",
-        mentions: "@marvinmckinney",
-        review:
-            "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-        imgPath: "/images/client5.png",
-    },
-    {
-        name: "Floyd Miles",
-        mentions: "@floydmiles",
-        review:
-            "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-        imgPath: "/images/client4.png",
-    },
-    {
-        name: "Albert Flores",
-        mentions: "@albertflores",
-        review:
-            "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-        imgPath: "/images/client6.png",
-    },
-];
 
 const socialImgs = [
     {
@@ -270,7 +220,6 @@ export {
     counterItems,
     expCards,
     expLogos,
-    testimonials,
     socialImgs,
     techStackIcons,
     techStackImgs,
